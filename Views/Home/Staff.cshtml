@@ -1,0 +1,30 @@
+﻿@model List<DataBaseFirstApporach.Models.Staff>
+
+<table>
+    <thead>
+        <th>StaffId</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Active</th>
+        <th>StoreId</th>
+        <th>ManagerId</th>
+    </thead>
+    <tbody>
+        @foreach(var row7 in Model)
+        {
+            <tr>
+                <th>@row7.StaffId</th>
+                <th>@row7.FirstName</th>
+                <th>@row7.LastName</th>
+                <th>@row7.Email</th>
+                <th>@row7.Phone</th>
+                <th>@row7.Active</th>
+                <th>@row7.StoreId</th>
+                <th>@row7.ManagerId</th>
+            </tr>
+        }
+    </tbody>
+
+</table>

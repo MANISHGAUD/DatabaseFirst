@@ -1,0 +1,25 @@
+﻿
+@model List<DataBaseFirstApporach.Models.Product>
+<table>
+    <thead>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>BrandId</th>
+        <th>CategoryId</th>
+        <th>ModelYear</th>
+        <th>ListPrice</th>
+    </thead>
+    <tbody>
+        @foreach(var row4 in Model)
+        {
+            <tr>
+                <th>@row4.ProductId</th>
+                <th>@row4.ProductName</th>
+                <th>@row4.BrandId</th>
+                <th>@row4.CategoryId</th>
+                <th>@row4.ModelYear</th>
+                <th>@row4.ListPrice</th>
+            </tr>
+        }
+    </tbody>
+</table>

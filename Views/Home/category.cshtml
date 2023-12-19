@@ -1,0 +1,24 @@
+﻿@model List<DataBaseFirstApporach.Models.Category>
+
+    <table class="table table-bordered">
+
+        <thead>
+
+            <th>CategoryId</th>
+            <th>CaterogyName</th>
+        </thead>
+        <tbody>
+        @foreach(var row1 in Model)
+        {
+            <tr>
+                <th>@row1.CategoryId</th>
+                <th>@row1.CategoryName</th>
+
+
+            </tr>
+            
+        }
+
+        </tbody>
+
+    </table>

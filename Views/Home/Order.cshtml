@@ -1,0 +1,29 @@
+﻿@model List<DataBaseFirstApporach.Models.Order>
+
+<table>
+    <thead>
+    <th>OrderId</th>
+    <th>CustomerId</th>
+    <th>OrderStatus</th>
+    <th>OrderDate</th>
+    <th>RequiredDate</th>
+    <th>ShippedDate</th>
+    <th>StoreId</th>
+    <th>StaffId</th>
+    </thead>
+    <tbody>
+        @foreach(var row5 in Model)
+        {
+            <tr>
+                <th>@row5.OrderId</th>
+                <th>@row5.CustomerId</th>
+                <th>@row5.OrderStatus</th>
+                <th>@row5.OrderDate</th>
+                <th>@row5.RequiredDate</th>
+                <th>@row5.ShippedDate</th>
+                <th>@row5.StoreId </th>
+                <th>@row5.StaffId</th>
+            </tr>
+        }
+    </tbody>
+</table>

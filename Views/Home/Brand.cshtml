@@ -1,0 +1,25 @@
+﻿@model List<DataBaseFirstApporach.Models.Brand> 
+
+@{
+    ViewData["Title"] = "Brand";
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>BrandId</th>
+            <th>BrandName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var row in Model)
+        {
+            <tr>
+                <th>@row.BrandId</th>
+                <th>@row.BrandName</th>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>

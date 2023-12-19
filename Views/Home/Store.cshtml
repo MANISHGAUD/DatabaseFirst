@@ -1,0 +1,30 @@
+﻿@model List<DataBaseFirstApporach.Models.Store>
+
+<table>
+    <thead>
+    <th>StoreId</th>
+    <th>StoreName</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>ZipCode</th>
+    </thead>
+    <tbody>
+        @foreach(var row9 in Model)
+        {
+            <tr>
+                <th>@row9.StoreId</th>
+                <th>@row9.StoreName</th>
+                <th>@row9.Phone</th>
+                <th>@row9.Email</th>
+                <th>@row9.Street</th>
+                <th>@row9.City</th>
+                <th>@row9.State</th>
+                <th>@row9.ZipCode</th>
+            </tr>
+        }
+
+    </tbody>
+</table>
